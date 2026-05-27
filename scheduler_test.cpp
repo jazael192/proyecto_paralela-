@@ -23,8 +23,8 @@ int main() {
     int chunk;
 
     // Cambiar para las pruebas:
-    tipo = omp_sched_static;
-    chunk = 1;
+    tipo = omp_sched_guided;
+    chunk = 100;
 
     omp_set_schedule(tipo, chunk);
 
